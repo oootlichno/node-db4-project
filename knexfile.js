@@ -6,6 +6,8 @@
 module.exports = {
   development: {
     client: "sqlite3",
+    migrations: {directory: './migrations'},
+    seeds: {directory: './seeds'},
     useNullAsDefault: true,
     connection: {
       filename: "./recipe.db3",
